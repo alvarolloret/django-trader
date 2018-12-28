@@ -24,8 +24,9 @@ SECRET_KEY = 'x6@lcxug1#+ro02((z7b-se_()=%vte(408udycar1sad$cu14'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ALLOWED_HOSTS = ['*']
 
-ALLOWED_HOSTS = []
+# https://stackoverflow.com/a/48594665/5176549
 
 
 # Application definition
