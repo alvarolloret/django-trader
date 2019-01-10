@@ -16,11 +16,11 @@
         {% for quiz in quizzes %}
           <tr>
             <td class="align-middle">{{ quiz.name }}</td>
-            <td class="align-middle">{{ quiz.subject.get_html_badge }}</td>
-            <td class="align-middle">{{ quiz.questions_count }} questions</td>
-            <td class="text-right">
+            <!-- <td class="align-middle">{{ quiz.subject.get_html_badge }}</td>
+            <td class="align-middle">{{ quiz.questions_count }} questions</td> -->
+            <!-- <td class="text-right">
               <a href="{% url 'students:take_quiz' quiz.pk %}" class="btn btn-primary">Start quiz</a>
-            </td>
+            </td> -->
           </tr>
         {% empty %}
           <tr>

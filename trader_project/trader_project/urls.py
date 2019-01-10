@@ -21,14 +21,8 @@ from . import views
 from accounts.views import classroom, students, teachers
 
 urlpatterns = [
-    # url(r"^$", views.IndexPage.as_view(), name="index"),
-    # url(r"^logged/$", views.LoggedPage.as_view(), name="logged"),
-    # url(r"^thanks/$", views.ThanksPage.as_view(), name="thanks"),
-    # url(r"^admin/", admin.site.urls),
-    # url(r"^accounts/", include("accounts.urls", namespace="accounts")),
-    # url(r"^accounts/", include("django.contrib.auth.urls")),
     path('', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('accounts/signup/', accounts.SignUpView.as_view(), name='signup'),
+    # path('accounts/signup/', accounts.SignUpView.as_view(), name='signup'),
     path('accounts/signup/student/', students.StudentSignUpView.as_view(), name='student_signup'),
 ]
