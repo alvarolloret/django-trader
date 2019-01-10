@@ -33,7 +33,7 @@
 <body class="container">
 
   <ul id="dropdown" class="dropdown-content">
-    <li><a href="{% url 'accounts:logout' %}">Log out</a></li>
+    <li><a href="{% url 'logout' %}">Log out</a></li>
     <li class="divider"></li>
     <li><a href="#">Inbox<span class = "badge">12</span></a></li>
     <li><a href="#!">Unread<span class = "new badge">4</span></a></li>
@@ -52,8 +52,8 @@
                              <i class = "mdi-navigation-arrow-drop-down right"></i></a></li>
 
         {% else %}
-        <li><a href="{% url 'accounts:login' %}" class="btn btn-simple">Log in</a></li>
-        <li><a href="{% url 'accounts:signup' %}" class="btn btn-simple">Sign up</a></li>
+        <li><a href="{% url 'login' %}" class="btn btn-simple">Log in</a></li>
+        <li><a href="{% url 'student_signup' %}" class="btn btn-simple">Sign up</a></li>
 
         {% endif %}
       </ul>
@@ -68,8 +68,8 @@
         <li><a href="#">Outbox<span class = "badge">14</span></a></li>
 
         {% else %}
-        <li><a href="{% url 'accounts:login' %}" class="btn btn-simple">Log in</a></li>
-        <li><a href="{% url 'accounts:signup' %}" class="btn btn-simple">Sign up</a></li>
+        <li><a href="{% url 'login' %}" class="btn btn-simple">Log in</a></li>
+        <li><a href="{% url 'student_signup' %}" class="btn btn-simple">Sign up</a></li>
         {% endif %}
       </ul>
     </div>

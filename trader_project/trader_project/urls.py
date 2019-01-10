@@ -18,7 +18,7 @@ from django.conf.urls import url, include
 from django.urls import path, include
 
 from . import views
-from accounts.views import classroom, students, teachers
+from accounts.views import accounts, students
 
 urlpatterns = [
     path('', include('accounts.urls')),
